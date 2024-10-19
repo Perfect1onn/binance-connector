@@ -1,4 +1,4 @@
-import { IError } from "@/types";
+import { IError } from "@/binance-connector/types";
 
 interface IOptions {
 	headers?: RequestInit["headers"];

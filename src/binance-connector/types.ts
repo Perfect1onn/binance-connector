@@ -22,4 +22,3 @@ export interface IWebSocketProps<T> {
 	onCloseHandler?: (event: CloseEvent) => void;
 	onOpenHandler?: (event: Event) => void;
 }
-

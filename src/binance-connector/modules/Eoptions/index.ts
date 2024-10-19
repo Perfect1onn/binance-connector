@@ -1,4 +1,4 @@
-import { IWebSocketProps } from "@/types";
+import { IWebSocketProps } from "@/binance-connector/types";
 import { Routes } from "../DecoratorFetch";
 import {
 	IExchangeInformation,
@@ -124,7 +124,7 @@ export class Eoptions {
 	connectOptionByExpirationStream(
 		underlyingAsset: string,
 		expiration: string,
-		handlers: IWebSocketProps<IWSTicker[]>
+		handlers: IWebSocketProps<IWSMarkPrice[]>
 	) {
 		const uri = `${underlyingAsset}@ticker@${expiration}`;
 		return this.createWebsocketConnection<IWSTicker[]>(uri, handlers);

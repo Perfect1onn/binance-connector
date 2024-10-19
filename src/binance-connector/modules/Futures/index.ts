@@ -1,4 +1,4 @@
-import { IWebSocketProps } from "@/types";
+import { IWebSocketProps } from "@/binance-connector/types";
 import { Routes } from "../DecoratorFetch";
 import { WebSocket } from "ws";
 import { IFuturesMarkPrice, IWSMarkPrice } from "./types";

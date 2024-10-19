@@ -5,9 +5,7 @@ import {
 	instanceModules,
 	Routes,
 } from "./modules";
-import {
-	IConnectorProps,
-} from "./types";
+import { IConnectorProps } from "./types";
 
 export class Connector {
 	public eoptions: Eoptions | null;
@@ -32,4 +30,3 @@ export class Connector {
 		});
 	}
 }
-
